@@ -23,7 +23,7 @@ public class BaseDriver {
         return driver;
     }
 
-    public static void main(String[] args) {
-        System.out.println(new BaseDriver().getDriver());
-    }
+//    public static void main(String[] args) {
+//        System.out.println(new BaseDriver().getDriver());
+//    }
 }
