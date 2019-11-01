@@ -1,16 +1,13 @@
 package com.core.base;
 
+import com.core.base.reusableBase.ReusableUtilsObject;
 import com.core.builder.BaseDriver;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
-
-import java.util.concurrent.TimeUnit;
 
 
-public class BaseCase {
+public class BaseCase extends ReusableUtilsObject {
     public WebDriver driver;
 
     @BeforeClass
@@ -19,13 +16,15 @@ public class BaseCase {
     }
 
     @BeforeMethod
-    public void initTest() {
-        driver.get("https://gearsay.com");
+    public void initTest() throws InterruptedException {
+        driver.get("http://dev.gearsay.com/");
+        Thread.sleep(3000);
     }
 
-    @AfterMethod
+   /* @AfterMethod
     public void tearDown () {
 
         driver.close();
-    }
+
+    }*/
 }
