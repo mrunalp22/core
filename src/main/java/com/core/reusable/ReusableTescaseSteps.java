@@ -5,7 +5,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class ReusableTescaseSteps extends Utils {
-    public WebDriver driver;
 
     public ReusableTescaseSteps() {
     }

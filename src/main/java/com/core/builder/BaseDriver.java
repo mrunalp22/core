@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 
 public class BaseDriver {
     private PropertiesParser propertiesParser = new PropertiesParser();
-    private WebDriver driver;
+    public WebDriver driver;
 
     public BaseDriver() {
         String browser = propertiesParser.getConfig("browser");
