@@ -18,7 +18,7 @@ public class BaseCase extends ReusableTescaseSteps {
 
     @BeforeMethod
     public void initTest() throws InterruptedException {
-        driver.get("http://dev.gearsay.com/");
+        driver.get("http://gearsay.com/");
         Thread.sleep(3000);
     }
 

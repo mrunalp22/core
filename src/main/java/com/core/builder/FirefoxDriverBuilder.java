@@ -6,9 +6,7 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 public class FirefoxDriverBuilder extends AbstractDriver {
 
     public WebDriver launchBrowser () {
-        FirefoxOptions fo= new FirefoxOptions();
-        fo.addArguments("start-maximized");
-        driver = new FirefoxDriver(fo);
+        driver = new FirefoxDriver();
         return driver;
     }
 

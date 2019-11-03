@@ -8,8 +8,6 @@ public class TestCase1 extends BaseCase {
 
     @Test
     public void clickConnect () throws InterruptedException {
-        reusableTescaseSteps.login();
-        driver.findElement(By.id("searchText4")).sendKeys("swimming");
-
+        login(driver);
     }
 }

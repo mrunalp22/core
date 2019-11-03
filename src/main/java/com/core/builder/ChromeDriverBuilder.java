@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 public class ChromeDriverBuilder extends AbstractDriver {
 
     public WebDriver launchBrowser() {
-        driver = new ChromeDriver(OptionsBuilder.getOptions());
+        driver = new ChromeDriver();
         return driver;
     }
 
