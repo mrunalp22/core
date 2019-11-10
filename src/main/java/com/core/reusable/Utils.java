@@ -88,5 +88,8 @@ public class Utils extends BaseDriver {
         Robot r = new Robot();
     }
 
-
+    public void ScrollPage(){
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,500)");
+    }
 }
